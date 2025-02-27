@@ -47,24 +47,22 @@ h1 {
 p {
     color: white;
 }
-.cake, .something, .museum, .cinema{
+.cake, .something, .museum, .cinema {
     border-radius: 7px;
     width: 375px;
     height: 500px;
     display: inline-block;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Ensure the transition works */
+    transform-origin: center center; /* Optional: Ensure zoom occurs from the center */
 }
 
 .cinema:hover, .cake:hover, .museum:hover, .something:hover {
-    cursor: url(cursor.cur), auto;
-    transform: scale(1.05);
+    cursor: url(cursor.cur), auto; /* Ensure cursor.cur is available */
+    transform: scale(1.05); /* Zoom in effect on hover */
+    z-index: 2; /* Ensure the element is on top during hover */
 }
 
 .cake {
-    border-radius: 7px;
-    width: 375px;
-    height: 500px;
-    display: inline-block;
     background-image: url(cakegalerie.jpg);
     margin-left: 50px;
 }
@@ -79,10 +77,6 @@ p {
 }
 
 .cinema {
-    border-radius: 7px;
-    width: 351px;
-    height: 500px;
-    display: inline-block;
     background-image: url(secret-untold-melody-poster-1-1.jpg);
     margin-left: 50px;
 }
@@ -97,10 +91,6 @@ p {
 }
 
 .museum {
-    border-radius: 7px;
-    width: 351px;
-    height: 500px;
-    display: inline-block;
     background-image: url(2018-04-19.jpg);
     margin-left: 50px;
 }
@@ -115,10 +105,6 @@ p {
 }
 
 .something {
-    border-radius: 7px;
-    width: 351px;
-    height: 500px;
-    display: inline-block;
     background-image: url(emi.jpg);
     margin-left: 50px;
 }
