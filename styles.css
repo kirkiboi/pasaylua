@@ -47,6 +47,18 @@ h1 {
 p {
     color: white;
 }
+.cake, .something, .museum, .cinema{
+    border-radius: 7px;
+    width: 375px;
+    height: 500px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cinema:hover, .cake:hover, .museum:hover, .something:hover {
+    cursor: url(cursor.cur), auto;
+    transform: scale(1.05);
+}
 
 .cake {
     border-radius: 7px;
@@ -119,12 +131,6 @@ p {
     color: white;
     font-size: 14.5px;
 }
-
-.cinema:hover, .cake:hover, .museum:hover, .something:hover {
-    cursor: url(cursor.cur), auto;
-    transform: scale(1.05);
-}
-
 
 @media (max-width: 768px) {
     h1 {
